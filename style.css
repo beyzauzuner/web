@@ -7,12 +7,15 @@ body, html {
     align-items: center;
     font-family: 'Times New Roman', sans-serif;
     color: #000000;
-    background-color:grey;
+    background-color: grey;
 }
 
 .main-wrapper {
     text-align: center;
     width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 30px;
 }
 
 .hbu-logo {
@@ -73,7 +76,6 @@ body, html {
     width: 100%;
 }
 
-
 .info-list {
     list-style-type: disc; 
     color: #000000;
@@ -123,9 +125,9 @@ body, html {
     transform: scale(1.05);
     background-color: #f9f9f9;
 }
-
 .contact-container {
-    max-width: 400px;
+    max-width: 350px;
+    height: 300px;   /* boyu buradan kısalır */
     background: #fff;
     padding: 20px;
     border: 3px solid #000;
@@ -170,12 +172,12 @@ body, html {
     font-weight: bold;
     cursor: pointer;
 }
-
 .social-links {
     margin-top: 15px;
     border-top: 1px dashed #000;
     padding-top: 10px;
 }
+
 
 .icons i {
     font-size: 2.5rem; 
@@ -200,4 +202,8 @@ input[type="email"] {
 input[type="email"]::placeholder {
     font-size: 0.85rem;
     opacity: 0.8;
+}
+body {
+    width: 100%;
+    overflow-x: hidden;
 }
