@@ -126,8 +126,8 @@ body, html {
     background-color: #f9f9f9;
 }
 .contact-container {
-    max-width: 280px;
-    height: 250px;   /* boyu buradan kısalır */
+    max-width: 350px;
+    height: 300px;   /* boyu buradan kısalır */
     background: #fff;
     padding: 15px;
     border: 3px solid #000;
