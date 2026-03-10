@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Blog içeriği için ek stiller */
-        .blog-body { margin-top: 20px; line-height: 1.6; color: #444; }
-        .blog-body h3 { color: #222; margin-top: 25px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
-        .code-block { background: #f4f4f4; padding: 10px; border-radius: 5px; font-family: monospace; display: block; margin: 10px 0; border-left: 4px solid #333; }
-        .download-section { background: #eef2f7; padding: 15px; border-radius: 8px; margin-top: 30px; text-align: center; border: 1px dashed #333; }
-        .download-btn { display: inline-block; padding: 10px 20px; background-color: #24292e; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
-        .download-btn:hover { background-color: #444; }
-        ul { padding-left: 20px; }
+        .blog-file-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        .blog-file-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -40,43 +44,11 @@
                         <h2>GitHub ve Git Rehberi</h2>
                         <span class="blog-date">10 Mart 2026</span>
                     </div>
-
-                    <div class="blog-body">
-                        <p>Günümüz yazılım dünyasında kod yazmak sadece satırlar oluşturmak değil, bu satırları yönetebilmek ve paylaşabilmektir[cite: 2]. İşte bu noktada karşımıza iki dev kavram çıkıyor: <strong>Git</strong> ve <strong>GitHub</strong>[cite: 3].</p>
-
-                        <h3>Neden GitHub Kullanmalıyız?</h3>
-                        <ul>
-                            <li><strong>Versiyon Kontrolü:</strong> Projenizin eski hallerine saniyeler içinde dönebilirsiniz[cite: 9].</li>
-                            <li><strong>İş Birliği:</strong> Aynı anda birçok kişi tek bir proje üzerinde çalışabilir[cite: 10].</li>
-                            <li><strong>Dijital Portfolyo:</strong> GitHub profiliniz, yazılımcılar için en etkili özgeçmiş (CV) yerine geçer[cite: 12].</li>
-                        </ul>
-
-                        <h3>Temel Kavramlar</h3>
-                        <p><strong>Repository (Depo):</strong> Projenizin tüm geçmişinin tutulduğu dijital kumbaradır[cite: 16].</p>
-                        <p><strong>Commit:</strong> Değişiklikleri mühürleyip sisteme kalıcı olarak kaydetmektir[cite: 19].</p>
-
-                        <h3>En Çok Kullanılan Git Komutları</h3>
-                        <span class="code-block">git init</span>
-                        <p>Bulunduğunuz klasörü bir Git deposu haline getirir[cite: 23].</p>
-
-                        <span class="code-block">git add .</span>
-                        <p>Değişiklikleri hazırlık alanına (Staging Area) taşır[cite: 39].</p>
-
-                        <span class="code-block">git commit -m "mesaj"</span>
-                        <p>Dosyaları kalıcı bir versiyon haline getirir[cite: 43].</p>
-
-                        <span class="code-block">git push</span>
-                        <p>Yerel kayıtları GitHub'daki uzak depoya gönderir[cite: 29].</p>
-                    </div>
-
-                    <div class="download-section">
-                        <p>Bu rehberin tamamını ve daha fazla komutu içeren Word dosyasını aşağıdan indirebilirsiniz:</p>
-                        <a href="belgeler/github.docx" class="download-btn" download>
-                            <i class="fa-solid fa-file-word"></i> Rehberi İndir (DOCX)
-                        </a>
-                    </div>
+                    <p>Hazırladığım GitHub ve Git rehberine aşağıdaki bağlantıdan ulaşabilirsiniz:</p>
                     
-                    <p style="text-align: right; margin-top: 20px; font-style: italic;">Yazar: Hatice Beyza Uzuner [cite: 72]</p>
+                    <a href="belgeler/github.docx" class="blog-file-link">
+                        <i class="fa-solid fa-file-word"></i> GitHub Rehberi - Hatice Beyza Uzuner [cite: 1, 72]
+                    </a>
                 </article>
 
             </div>
