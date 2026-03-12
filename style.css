@@ -185,7 +185,6 @@ body, html {
 }
 
 /* SOCIAL LINKS */
-
 .social-links {
     flex: 1;
     border-left: 2px dashed #000;
@@ -194,7 +193,6 @@ body, html {
     flex-direction: column;
     justify-content: center;
 }
-
 .icons {
     display: flex;
     justify-content: center;
