@@ -1,21 +1,22 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 100vh;
     font-family: 'Times New Roman', sans-serif;
     color: #000000;
     background-color: grey;
 }
 
+body{
+    display: flex;
+    justify-content: center;
+}
 .main-wrapper {
     text-align: center;
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .hbu-logo {
