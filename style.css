@@ -187,11 +187,8 @@ body, html {
 /* SOCIAL LINKS */
 .social-links {
     flex: 1;
-    border-left: 2px dashed #000;
     padding-left: 20px;
     text-align: center;
-    flex-direction: column;
-    justify-content: center;
 }
 .icons {
     display: flex;
