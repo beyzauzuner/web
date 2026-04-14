@@ -16,7 +16,7 @@ body {
 .main-wrapper {
     text-align: center;
     width: 100%;
-    max-width: 1000px; /* Kutular yan yana sığsın diye biraz genişlettik */
+    max-width: 1100px; /* Kutular yan yana rahat sığsın */
     margin: 40px auto;
 }
 
@@ -39,7 +39,6 @@ body {
     gap: 12px;
     justify-content: center;
     margin-bottom: 40px;
-    flex-wrap: wrap;
 }
 .nav-item {
     text-decoration: none;
@@ -57,42 +56,42 @@ body {
 .nav-item.active { background: #a8d8ea; }
 
 /* ---------------------------------------------------- */
-/* BLOG VE SERTİFİKA KUTULARINI DÜZELTEN KISIM */
+/* BLOG VE SERTİFİKA KUTULARI (İLK ATTIĞIN AYRI AYRI HALİ) */
 /* ---------------------------------------------------- */
 .home-content {
     display: flex;
-    flex-direction: row; /* Kutuları yan yana dizer */
-    flex-wrap: wrap;    /* Sığmayanları alta atar */
+    flex-direction: row; /* Yan yana dizilim */
+    flex-wrap: wrap;    /* Sığmayınca alta geçme */
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
     padding: 20px;
-    width: 100%;
 }
 
-/* Blog ve Sertifika sayfalarındaki her bir kutunun tasarımı */
-.home-content > div {
+/* Kutuların birbirinden bağımsız, o ilk attığın hali */
+.home-content > div:not(.contact-page-wrapper) {
     background: #fff;
     border: 3px solid #000;
     padding: 20px;
-    box-shadow: 10px 10px 0px #000;
+    box-shadow: 10px 10px 0px #000; /* O meşhur kalın gölge */
     border-radius: 15px;
-    width: 280px; /* Kutuların genişliği */
-    min-height: 150px;
+    width: 300px; /* Kutuların genişliği */
     text-align: left;
+    display: block; /* Her kutu kendi içinde bağımsız */
 }
 
 /* ---------------------------------------------------- */
-/* İLETİŞİM KUTUNA DOKUNMUYORUZ (ÖZEL AYARLAR) */
+/* İLETİŞİM KUTUSU (BEĞENDİĞİN SADE VE SİYAH HALİ) */
 /* ---------------------------------------------------- */
 .contact-page-wrapper {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     width: 100% !important;
-    border: none !important;      /* Dış çerçeveyi kaldırır */
-    background: none !important;  /* Gri arka planı kaldırır */
-    box-shadow: none !important;  /* Gölgeyi kaldırır */
-    margin-top: 20px;
+    /* İletişim kutusunun dış çerçeve ve gölgesini siliyoruz */
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
 }
 
 .outlook-mini-card {
@@ -105,14 +104,8 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    transition: 0.2s;
     box-shadow: 5px 5px 0px #000;
     font-weight: 900;
-}
-
-.outlook-mini-card:hover {
-    transform: translate(-2px, -2px);
-    box-shadow: 7px 7px 0px #000;
 }
 
 .social-mini-row {
@@ -124,5 +117,4 @@ body {
 .social-mini-row a {
     font-size: 2.2rem;
     color: #000;
-    transition: 0.3s;
 }
