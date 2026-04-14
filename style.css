@@ -1,4 +1,4 @@
-/* GENEL AYARLAR */
+/* GENEL */
 body, html {
     margin: 0;
     padding: 0;
@@ -10,7 +10,6 @@ body, html {
 body {
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 .main-wrapper {
@@ -20,7 +19,7 @@ body {
     margin: 40px auto;
 }
 
-/* LOGO VE NAV */
+/* LOGO */
 .hbu-logo {
     width: 110px;
     height: 110px;
@@ -32,14 +31,20 @@ body {
     margin: 0 auto 25px;
     background: #fff;
 }
-.hbu-logo h1 { margin: 0; font-size: 2.2rem; color: #000; }
 
+.hbu-logo h1 {
+    margin: 0;
+}
+
+/* NAV */
 .nav-container {
     display: flex;
     gap: 12px;
     justify-content: center;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
+
 .nav-item {
     text-decoration: none;
     color: #000;
@@ -53,12 +58,18 @@ body {
     gap: 8px;
     transition: 0.3s;
 }
-.nav-item.active { background: #a8d8ea; }
 
-/* ---------------------------------------------------- */
-/* BLOG VE SERTİFİKA KUTULARI (İLK HALİNE DÖNÜŞ) */
-/* ---------------------------------------------------- */
-.home-content {
+.nav-item:hover {
+    background: #eaeaea;
+}
+
+.nav-item.active {
+    background: #a8d8ea;
+}
+
+/* BLOG & SERTİFİKA (SADECE BU SAYFALARDA KULLAN) */
+.blog-container,
+.sertifika-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -66,28 +77,37 @@ body {
     padding: 20px;
 }
 
-/* Bu kısım Blog ve Sertifika sayfalarındaki kutuları tek tek ayırır */
-.home-content > div {
+.blog-container > div,
+.sertifika-container > div {
     background: #fff;
     border: 3px solid #000;
     padding: 25px;
     box-shadow: 10px 10px 0px #000;
     border-radius: 15px;
-    width: 300px; /* Kutuların genişliği */
+    width: 300px;
     text-align: left;
 }
 
-/* ---------------------------------------------------- */
-/* SADECE İLETİŞİM SAYFASI (ÖZEL AYARLAR) */
-/* ---------------------------------------------------- */
+/* LINKLER SİYAH */
+.blog-container a,
+.sertifika-container a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ------------------------- */
+/* İLETİŞİM SAYFASI */
+/* ------------------------- */
 .iletisim-ozel-alan {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
     margin-top: 40px;
 }
 
+/* MAIL BUTONU */
 .outlook-mini-card {
     text-decoration: none;
     color: #000;
@@ -98,23 +118,48 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    transition: 0.2s;
     box-shadow: 5px 5px 0px #000;
     font-weight: 900;
+    transition: 0.3s;
 }
 
 .outlook-mini-card:hover {
-    transform: translate(-2px, -2px);
-    box-shadow: 7px 7px 0px #000;
+    transform: translate(-3px, -3px);
 }
 
+/* SOSYAL İKONLAR */
 .social-mini-row {
     display: flex;
     gap: 25px;
+    justify-content: center;
 }
 
+/* 🔥 İKON BUTON HALİ */
 .social-mini-row a {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: #000;
+    width: 55px;
+    height: 55px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 5px 5px 0px #000;
     transition: 0.3s;
+}
+
+/* HOVER EFEKT */
+.social-mini-row a:hover {
+    transform: translate(-3px, -3px);
+}
+
+/* RENKLİ HOVER */
+.social-mini-row a:hover .fa-instagram {
+    color: #e1306c;
+}
+
+.social-mini-row a:hover .fa-github {
+    color: #555;
 }
