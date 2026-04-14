@@ -4,68 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - HBU</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
     <style>
         .blog-file-link {
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            color: #007bff;
+            color: #000;
             text-decoration: none;
             font-weight: 500;
             margin-top: 10px;
         }
+
         .blog-file-link:hover {
             text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
 
-    <div class="main-wrapper">
-        <div class="hbu-logo">
-            <h1>HBU</h1>
-        </div>
+<div class="main-wrapper">
 
-        <nav class="nav-container">
-            <a href="index.html" class="nav-item"><i class="fa-solid fa-house"></i> Ana Sayfa</a>
-            <a href="hakkimda.html" class="nav-item"><i class="fa-solid fa-user"></i> Hakkımda</a>
-            <a href="blog.html" class="nav-item active"><i class="fa-solid fa-pen-nib"></i> Blog</a>
-            <a href="sertifikalar.html" class="nav-item"><i class="fa-solid fa-award"></i> Sertifikalar</a>
-            <a href="iletisim.html" class="nav-item"><i class="fa-solid fa-envelope"></i> İletişim</a>
-        </nav>
-
-        <div class="home-content">
-            <div class="blog-list-container">
-                
-                <article class="blog-card">
-                    <div class="blog-header">
-                        <h2>GitHub ve Git Rehberi</h2>
-                        <span class="blog-date">10 Mart 2026</span>
-                    </div>
-                    <p>Hazırladığım GitHub ve Git rehberine aşağıdaki bağlantıdan ulaşabilirsiniz:</p>
-                    
-                    <a href="belgeler/github.docx" class="blog-file-link">
-                        <i class="fa-solid fa-file-word"></i> GitHub Rehberi - Hatice Beyza Uzuner
-                    </a>
-                </article>
-
-                <article class="blog-card">
-                    <div class="blog-header">
-                        <h2>TypeScript ve alt başlıkları</h2>
-                        <span class="blog-date">30 Mart 2026</span>
-                    </div>
-                    <p>Hazırladığım TypeScript rehberine aşağıdaki bağlantıdan ulaşabilirsiniz:</p>
-                    
-                    <a href="belgeler/JavaScript.docx" class="blog-file-link">
-                        <i class="fa-solid fa-file-pdf"></i> TypeScript- Hatice Beyza Uzuner
-                    </a>
-                </article>
-
-            </div>
-        </div>
+    <!-- LOGO -->
+    <div class="hbu-logo">
+        <h1>HBU</h1>
     </div>
+
+    <!-- NAV -->
+    <nav class="nav-container">
+        <a href="index.html" class="nav-item"><i class="fa-solid fa-house"></i> Ana Sayfa</a>
+        <a href="hakkimda.html" class="nav-item"><i class="fa-solid fa-user"></i> Hakkımda</a>
+        <a href="blog.html" class="nav-item active"><i class="fa-solid fa-pen-nib"></i> Blog</a>
+        <a href="sertifikalar.html" class="nav-item"><i class="fa-solid fa-award"></i> Sertifikalar</a>
+        <a href="iletisim.html" class="nav-item"><i class="fa-solid fa-envelope"></i> İletişim</a>
+    </nav>
+
+    <!-- BLOG CONTAINER -->
+    <div class="blog-container">
+
+        <div>
+            <h2>GitHub ve Git Rehberi</h2>
+            <span>10 Mart 2026</span>
+            <p>Git ve GitHub hakkında hazırladığım rehber:</p>
+
+            <a href="belgeler/github.docx" class="blog-file-link">
+                <i class="fa-solid fa-file-word"></i> GitHub Rehberi
+            </a>
+        </div>
+
+        <div>
+            <h2>TypeScript ve Alt Başlıkları</h2>
+            <span>30 Mart 2026</span>
+            <p>TypeScript hakkında hazırladığım doküman:</p>
+
+            <a href="belgeler/JavaScript.docx" class="blog-file-link">
+                <i class="fa-solid fa-file-pdf"></i> TypeScript Rehberi
+            </a>
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 </html>
