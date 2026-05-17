@@ -70,12 +70,17 @@ body {
 /* ------------------------- */
 /* BLOG SAYFASI */
 /* ------------------------- */
+/* ------------------------- */
+/* BLOG SAYFASI - GÜNCEL */
+/* ------------------------- */
 .blog-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row; /* Yan yana dizilmeyi zorunlu kılar */
+    flex-wrap: nowrap;   /* Genişlik yeterliyse aşağı kaymasını engeller */
     justify-content: center;
     gap: 25px;
     padding: 20px;
+    width: 100%;
 }
 
 .blog-container > div {
@@ -84,8 +89,9 @@ body {
     padding: 25px;
     box-shadow: 10px 10px 0px #000;
     border-radius: 15px;
-    width: 300px;
+    width: 300px; /* Kutuların sabit genişliği */
     text-align: left;
+    flex-shrink: 0; /* Kutuların sıkışıp küçülmesini engeller */
 }
 
 /* ------------------------- */
