@@ -75,12 +75,12 @@ body {
 /* ------------------------- */
 .blog-container {
     display: flex;
-    flex-direction: row; /* Yan yana dizilmeyi zorunlu kılar */
-    flex-wrap: nowrap;   /* Genişlik yeterliyse aşağı kaymasını engeller */
-    justify-content: center;
-    gap: 25px;
+    flex-direction: row; /* Yan yana dizer */
+    justify-content: center; /* Ortalar */
+    align-items: stretch; /* Boylarını eşitler */
+    gap: 20px;
     padding: 20px;
-    width: 100%;
+    flex-wrap: nowrap; /* Ekran daralsa bile aşağı kaymasını engeller */
 }
 
 .blog-container > div {
@@ -89,9 +89,9 @@ body {
     padding: 25px;
     box-shadow: 10px 10px 0px #000;
     border-radius: 15px;
-    width: 300px; /* Kutuların sabit genişliği */
+    width: 300px; /* Kutuların genişliği */
+    flex-shrink: 0; /* Kutuların daralmasını engeller */
     text-align: left;
-    flex-shrink: 0; /* Kutuların sıkışıp küçülmesini engeller */
 }
 
 /* ------------------------- */
